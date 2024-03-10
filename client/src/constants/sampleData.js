@@ -24,7 +24,7 @@ export const samepleChats = [
 
 export const sampleUsers = [
     {
-        avatar:"https://images.unsplash.com/photo-1574158622682-e40e69881006?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNhdHxlbnwwfHwwfHx8MA%3D%3D",
+        avatar: "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNhdHxlbnwwfHwwfHx8MA%3D%3D",
         name: "raju bhai",
         _id: "1",
 
@@ -58,3 +58,48 @@ export const sampleNotifications = [
 
     },
 ]
+
+
+
+
+export const sampleMessage = [
+    {
+        attachments: [
+            {
+                public_id: "deepika",
+                url: "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNhdHxlbnwwfHwwfHx8MA%3D%3D",
+            },
+
+        ],
+        content: "hatt banchoo",
+        _id: "qkvhoquilknewjee",
+        sender: {
+            _id: "user._id",
+            name: "chacha",
+
+        },
+        chat: "chatId",
+        careatedAt: "2024-02-12T10:41:30.630Z",
+    },
+
+    {
+        attachments: [
+            {
+                public_id: "deepika",
+                url: "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNhdHxlbnwwfHwwfHx8MA%3D%3D",
+            },
+
+        ],
+        content: "laude 2 jhatu banchoo",
+        _id: "qkvhoquilknewjee",
+        sender: {
+            _id: "nvwhkbod",
+            name: "raju"
+
+        },
+        chat: "chatId",
+        careatedAt: "2024-02-12T10:41:30.630Z",
+    },
+
+
+];

@@ -26,14 +26,14 @@ const NewGroup = () => {
         ? prev.filter((currElement) => currElement !== id)
         : [...prev, id])
   };
-  console.log(selectedMembers);
+  
+  const submitHandler = () => {};
 
 
-
-  const submitHandler = () => { };
+  const closerHandler = ()=> {};
 
   return (
-    <Dialog open>
+    <Dialog open onClose={closerHandler} >
       <Stack
         p={{
           xs: "1rem",
