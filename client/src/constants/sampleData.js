@@ -1,7 +1,7 @@
 
 export const samepleChats = [
     {
-        avatar: ["https://images.unsplash.com/photo-1574158622682-e40e69881006?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNhdHxlbnwwfHwwfHx8MA%3D%3D"],
+        avatar: ["https://www.w3schools.com/howto/img_avatar.png"],
         name: "raju bhai",
         _id: "1",
         groupChat: false,
@@ -10,7 +10,7 @@ export const samepleChats = [
     },
 
     {
-        avatar: ["https://images.unsplash.com/photo-1574158622682-e40e69881006?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNhdHxlbnwwfHwwfHx8MA%3D%3D"
+        avatar: ["https://www.w3schools.com/howto/img_avatar.png"
         ],
         name: "rahul singh",
 
@@ -19,19 +19,20 @@ export const samepleChats = [
         members: ["1", "2"],
 
     },
+  
 ];
 
 
 export const sampleUsers = [
     {
-        avatar: "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNhdHxlbnwwfHwwfHx8MA%3D%3D",
+        avatar: "https://www.w3schools.com/howto/img_avatar.png",
         name: "raju bhai",
         _id: "1",
 
     },
 
     {
-        avatar: "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNhdHxlbnwwfHwwfHx8MA%3D%3D",
+        avatar: "https://www.w3schools.com/howto/img_avatar.png",
         name: "rahul singh",
         _id: "2",
 
@@ -42,7 +43,7 @@ export const sampleUsers = [
 export const sampleNotifications = [
     {
         sender: {
-            avatar: "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNhdHxlbnwwfHwwfHx8MA%3D%3D",
+            avatar: "https://www.w3schools.com/howto/img_avatar.png",
             name: "raju bhai",
         },
         _id: "1",
@@ -51,7 +52,7 @@ export const sampleNotifications = [
 
     {
         sender: {
-            avatar: "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNhdHxlbnwwfHwwfHx8MA%3D%3D",
+            avatar: "https://www.w3schools.com/howto/img_avatar.png",
             name: "rahul singh",
         },
         _id: "2",
@@ -64,14 +65,8 @@ export const sampleNotifications = [
 
 export const sampleMessage = [
     {
-        attachments: [
-            {
-                public_id: "deepika",
-                url: "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNhdHxlbnwwfHwwfHx8MA%3D%3D",
-            },
-
-        ],
-        content: "hatt banchoo",
+        attachments: [],
+        content: "hello how are you broo",
         _id: "qkvhoquilknewjee",
         sender: {
             _id: "user._id",
@@ -79,27 +74,28 @@ export const sampleMessage = [
 
         },
         chat: "chatId",
-        careatedAt: "2024-02-12T10:41:30.630Z",
+        createdAt: "2024-03-11T08:25:39Z",
     },
 
     {
-        attachments: [
+        attachments:[
             {
                 public_id: "deepika",
-                url: "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNhdHxlbnwwfHwwfHx8MA%3D%3D",
+                url: "https://www.w3schools.com/howto/img_avatar.png",
             },
 
         ],
-        content: "laude 2 jhatu banchoo",
-        _id: "qkvhoquilknewjee",
+        content:"",
+        _id: "qkvhoquiravilknewjee",
         sender: {
             _id: "nvwhkbod",
-            name: "raju"
+            name: "raju",
 
         },
         chat: "chatId",
-        careatedAt: "2024-02-12T10:41:30.630Z",
+        createdAt: "2024-03-11T08:25:39Z",
     },
+    
 
 
 ];

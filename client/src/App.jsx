@@ -11,6 +11,9 @@ const Chat = lazy(() => import("./pages/Chat"));
 const Groups = lazy(() => import("./pages/Groups"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
+const AdminLogin = lazy(() => import("./pages/Admin/AdminLogin"));
+const Dashboard = lazy(() => import("./pages/Admin/Dashboard"));
+
 let user = true;
 const App = () => {
   return (
@@ -30,6 +33,9 @@ const App = () => {
               <Login />
             </ProtectRoute>} />
 
+            <Route path="/admin" element={<AdminLogin />} />
+            <Route path="/admin/dashboard" element={<Dashboard />} />
+
 
           <Route path="*" element={<NotFound />} />
         </Routes>
@@ -38,5 +44,5 @@ const App = () => {
     </BrowserRouter>
   )
 }
-
+ 
 export default App
