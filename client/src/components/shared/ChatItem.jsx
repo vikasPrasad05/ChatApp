@@ -11,61 +11,68 @@ const ChatItem = ({
     avatar = [],
     name,
     _id,
-    groupChat = false, 
+    groupChat = false,
     sameSender,
     isOnline,
-    newMessageAlert,  
+    newMessageAlert,
     index = 0,
     handleDeleteChat,
-}) => { 
+}) => {
     return (
-        <Link sx={{
-            padding:"0",
-        }}
-        to={`/chat/${_id}`} onContextMenu={(e) => handleDeleteChat(e, _id, groupChat)}>
+        <Box sx={{
+            bgcolor:"#71677C",
+            
+        }}>
+            <Link sx={{
+                padding: "0",
+            }}
+                to={`/chat/${_id}`} onContextMenu={(e) => handleDeleteChat(e, _id, groupChat)}>
 
-            <div style={{
-                display: "flex",
-                gap: "1rem",
-                alignItems: "center",
-                padding: "1rem",
-                backgroundColor: sameSender ? matblack : "unset",
-                color: sameSender ? "white" : "unset",
-                position: "relative",
-            }}>
+                <div style={{
+                    display: "flex",
+                    gap: "1rem",
+                    alignItems: "center",
+                    padding: "1rem",
+                    backgroundColor: sameSender ? matblack : "unset",
+                    color: sameSender ? "white" : "unset",
+                    position: "relative",
+                }}>
 
 
-                <AvatarCard avatar={avatar} />
+                    <AvatarCard avatar={avatar} />
 
-                <Stack>
-                    <Typography>{name}</Typography>
+                    <Stack>
+                        <Typography>{name}</Typography>
+                        {
+                            newMessageAlert && (
+                                <Typography>
+                                    {newMessageAlert.count} New Message
+                                </Typography>
+                            )
+                        }
+                    </Stack>
+
                     {
-                        newMessageAlert && (
-                            <Typography>
-                                {newMessageAlert.count} New Message
-                            </Typography>
-                        )
+                        isOnline && <Box sx={{
+                            width: "10px",
+                            height: "10px",
+                            borderRadius: "50%",
+                            backgroundColor: "green",
+                            position: "absolute",
+                            top: "50%",
+                            right: "1rem",
+                            transform: "translateY(-50%)",
+                        }} />
+
+
                     }
-                </Stack>
-
-                {
-                    isOnline && <Box sx={{
-                        width: "10px",
-                        height: "10px",
-                        borderRadius: "50%",
-                        backgroundColor: "green",
-                        position: "absolute",
-                        top: "50%",
-                        right: "1rem",
-                        transform: "translateY(-50%)",
-                    }} />
-
-                   
-                }
 
 
-            </div>
-        </Link>
+                </div>
+            </Link>
+        </Box>
+
+
     )
 }
 

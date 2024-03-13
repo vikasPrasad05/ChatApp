@@ -4,3 +4,6 @@ export const lightblue = "#2694ab";
 
 export const matblack = "#1c1c1c";
 export const bgGradient = "Linear-gradient(rgb(0,225,225,0.1),rgb(1,2,0,.4))";
+
+export const purple = "rgba(75,12,192,1)"
+export const litepurple = "rgba(75,12,192,0.2)"
