@@ -8,7 +8,7 @@ import {
   Typography
 } from '@mui/material';
 import React, { Suspense, lazy, useState } from 'react'
-import { orange } from '../../constants/color';
+import { matblack, orange } from '../../constants/color';
 import {
   Add as AddIcon,
   Menu as MenuIcon,
@@ -66,7 +66,7 @@ const Header = () => {
     <>
       <Box sx={{ flexGrow: 1 }} height={"4rem"}>
         <AppBar position="static" sx={{
-          bgcolor: orange,
+          bgcolor: "black",
         }} >
 
           <Toolbar>
@@ -75,7 +75,7 @@ const Header = () => {
               sx={{
                 display: { xs: "none", sm: "block" }
               }}>
-              chaat
+              ChatHub
 
             </Typography>
 

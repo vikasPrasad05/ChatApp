@@ -3,6 +3,7 @@ import React, { memo } from 'react'
 import { Link } from '../styles/StyledComponents'
 import { Avatar, Box, Stack, Typography } from '@mui/material'
 import AvatarCard from './AvatarCard'
+import { matblack } from '../../constants/color'
 
 
 
@@ -28,7 +29,7 @@ const ChatItem = ({
                 gap: "1rem",
                 alignItems: "center",
                 padding: "1rem",
-                backgroundColor: sameSender ? "black" : "unset",
+                backgroundColor: sameSender ? matblack : "unset",
                 color: sameSender ? "white" : "unset",
                 position: "relative",
             }}>

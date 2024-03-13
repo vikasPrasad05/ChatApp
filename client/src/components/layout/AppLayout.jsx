@@ -6,6 +6,7 @@ import ChatList from "../specific/ChatList"
 import {samepleChats} from "../../constants/sampleData"
 import { useParams } from 'react-router-dom';
 import Profile from '../specific/Profile';
+import { matblack } from '../../constants/color';
 
 const AppLayout = () => (WrappedComponent) => {
     return (props) => {
@@ -34,6 +35,7 @@ const AppLayout = () => (WrappedComponent) => {
             chats={samepleChats} 
             chatId={chatId} 
             handleDeleteChat={handleDeleteChat}
+        
             />
         </Grid>
 
@@ -49,7 +51,7 @@ const AppLayout = () => (WrappedComponent) => {
         sx={{
             display: { xs:"none", md:"block"},
             padding: "2rem",
-            bgcolor: "rgb(0,0,0,0.85)",
+            bgcolor: matblack,
         }} >
 
 
