@@ -1,6 +1,8 @@
+import { compare } from "bcrypt";
 import { User } from "../models/user.js";
+import { sendToket } from "../utils/features.js";
 
-// create a new user and save it to database and save in cookies 
+// create a new user and save it to database and save token in cookies 
 const newUser = async (req, res) => {
 
 
@@ -12,7 +14,7 @@ const newUser = async (req, res) => {
         url: "vaukev",
     };
 
-    await User.create({
+    const user = await User.create({
         name,
         username,
         password,
@@ -21,12 +23,31 @@ const newUser = async (req, res) => {
     });
 
 
-    res.status(201).json({ message: "User created successfully" });
+    sendToket(res, user, 201, "User created")
 }
 
-const Login = (req, res) => {
-    res.send("hello world");
+const Login = async(req, res,next) => {
+   try {
+    const { username, password } = req.body;
+
+
+    const user = await User.findOne({username}).select("+password");
+c
+    if(!user) return next(new Error("Invalid username"));
+
+    const isMatch = await compare(password, user.password);
+
+    if(!isMatch) return next(new Error("Invalid password"));;
+
+
+    sendToket(res, user, 200, `Welcome Back ${user.name}`)
+   } catch (error) {
+    next(error);
+   }
 };
 
 
-export { Login, newUser };   
+const getMyProfile =async(req, res) =>{};
+
+
+export { Login, newUser,getMyProfile };    
