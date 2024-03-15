@@ -41,7 +41,7 @@ const UserItem = ({
                 </Typography>
 
                 <IconButton
-                    size="small"
+                    size="lg"
                     sx={{
                         bgcolor: isAdded ? "error.main" : "primary.main",
                         color: "white",
