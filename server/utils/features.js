@@ -40,4 +40,12 @@ const sendToket = (res, user, code, message) => {
 
 }
 
-export { connectDB, sendToket };
+const emitEvent =(req,event,users,data)=>{
+    console.log("Emmiting event",event);
+};
+
+const deleteFilesFromCloudinary = async(public_ids) =>{
+
+}
+
+export { connectDB, sendToket, cookieOptions,emitEvent,deleteFilesFromCloudinary };
